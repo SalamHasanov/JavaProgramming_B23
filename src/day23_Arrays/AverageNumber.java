@@ -1,0 +1,24 @@
+package day23_Arrays;
+
+import java.util.Scanner;
+
+public class AverageNumber {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many numbers do you want to enter?");
+        int[] sizeOfNumbers = new int [scan.nextInt()];
+        int sum = 0;
+
+        for (int i = 0; i <= sizeOfNumbers.length-1; i++) {
+            System.out.println("Enter a number:");
+            sizeOfNumbers[i] = scan.nextInt();
+            sum += sizeOfNumbers[i];
+
+            }
+        System.out.println("sum = " + sum);
+        double average = (double)sum / sizeOfNumbers.length;
+        System.out.println("average = " + average);
+        scan.close();
+    }
+}
