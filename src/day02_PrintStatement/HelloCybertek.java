@@ -5,7 +5,7 @@ public class HelloCybertek {
     public static void  main (String[] kfc) {
 
 
-        System.out.println("Hello Cyberterk!");
+        System.out.println("Hello Cybertek!");
     }
 
 
